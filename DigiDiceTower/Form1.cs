@@ -14,6 +14,7 @@ namespace DigiDiceTower
 {
     public partial class DigiDiceTower : Form
     {
+
         int d4Rolls = 0;
         int d6Rolls = 0;
         int d8Rolls = 0;
@@ -21,11 +22,14 @@ namespace DigiDiceTower
         int d12Rolls = 0;
         int d20Rolls = 0;
         int d100Rolls = 0;
+
+        int selectedTower = 0;
+
         public DigiDiceTower()
         {
             InitializeComponent();
+            towerSelect.SelectedIndex = 0;
         }
-
         private void btnRollD4_Click(object sender, EventArgs e)
         {
             d4Rolls++;
@@ -234,6 +238,110 @@ namespace DigiDiceTower
             d12critfail.Text = $"{d12crits}/{d12fails}";
             d20critfail.Text = $"{d20crits}/{d20fails}";
             d100critfail.Text = $"{d100crits}/{d100fails}";
+        }
+
+        private void towerSelect_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if(towerSelect.SelectedIndex == 0)
+            {
+                btnRollD4.Visible = true;
+                diceTray.Visible = true;
+                d100critfail.Visible = true;
+                d20critfail.Visible= true;
+                d12critfail.Visible = true;
+                label14.Visible = true;
+                label13.Visible = true;
+                d12critfaillabel.Visible = true;
+                total.Visible = true;
+                d10critfail.Visible = true;
+                d8critfail.Visible = true;
+                d6critfail.Visible = true;
+                d4critfail.Visible = true;
+                label12.Visible = true;
+                label11.Visible = true;
+                label10.Visible = true;
+                label9.Visible = true;
+                label8.Visible = true;
+                groupBox7.Visible = true;
+                label7.Visible = true;
+                groupBox6.Visible = true;
+                label6.Visible = true;
+                groupBox5.Visible = true;
+                label5.Visible = true;
+                groupBox4.Visible = true;
+                label4.Visible = true;
+                groupBox3.Visible = true;
+                label3.Visible = true;
+                groupBox2.Visible = true;
+                label2.Visible = true;
+                d4Tray.Visible = true;
+                label1.Visible = true;
+                btnRollD6.Visible = true;
+                btnRollD8.Visible = true;
+                btnRollD10.Visible = true;
+                btnRollD12.Visible = true;
+                btnRollD20.Visible = true;
+                btnRollD100.Visible = true;
+                btnRollTray.Visible = true;
+                diceTray.Visible = true;
+                groupBox7.Visible = true;
+                groupBox6.Visible = true;
+                groupBox5.Visible = true;
+                groupBox4.Visible = true;
+                groupBox3.Visible = true;
+                groupBox2.Visible = true;
+                d4Tray.Visible = true;
+            }
+            else
+            {
+                btnRollD4.Visible = false;
+                diceTray.Visible = false;
+                d100critfail.Visible = false;
+                d20critfail.Visible = false;
+                d12critfail.Visible = false;
+                label14.Visible = false;
+                label13.Visible = false;
+                d12critfaillabel.Visible = false;
+                total.Visible = false;
+                d10critfail.Visible = false;
+                d8critfail.Visible = false;
+                d6critfail.Visible = false;
+                d4critfail.Visible = false;
+                label12.Visible = false;
+                label11.Visible = false;
+                label10.Visible = false;
+                label9.Visible = false;
+                label8.Visible = false;
+                groupBox7.Visible = false;
+                label7.Visible = false;
+                groupBox6.Visible = false;
+                label6.Visible = false;
+                groupBox5.Visible = false;
+                label5.Visible = false;
+                groupBox4.Visible = false;
+                label4.Visible = false;
+                groupBox3.Visible = false;
+                label3.Visible = false;
+                groupBox2.Visible = false;
+                label2.Visible = false;
+                d4Tray.Visible = false;
+                label1.Visible = false;
+                btnRollD6.Visible = false;
+                btnRollD8.Visible = false;
+                btnRollD10.Visible = false;
+                btnRollD12.Visible = false;
+                btnRollD20.Visible = false;
+                btnRollD100.Visible = false;
+                btnRollTray.Visible = false;
+                diceTray.Visible = false;
+                groupBox7.Visible = false;
+                groupBox6.Visible = false;
+                groupBox5.Visible = false;
+                groupBox4.Visible = false;
+                groupBox3.Visible = false;
+                groupBox2.Visible = false;
+                d4Tray.Visible = false;
+            }
         }
     }
 }
