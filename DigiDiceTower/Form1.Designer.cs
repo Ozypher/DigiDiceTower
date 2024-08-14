@@ -68,6 +68,7 @@
             this.btnRollD100 = new System.Windows.Forms.Button();
             this.btnRollTray = new System.Windows.Forms.Button();
             this.towerSelect = new System.Windows.Forms.ComboBox();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.diceTray.SuspendLayout();
             this.groupBox7.SuspendLayout();
             this.groupBox6.SuspendLayout();
@@ -76,11 +77,12 @@
             this.groupBox3.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.d4Tray.SuspendLayout();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnRollD4
             // 
-            this.btnRollD4.Location = new System.Drawing.Point(20, 18);
+            this.btnRollD4.Location = new System.Drawing.Point(6, 5);
             this.btnRollD4.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnRollD4.Name = "btnRollD4";
             this.btnRollD4.Size = new System.Drawing.Size(112, 35);
@@ -114,11 +116,11 @@
             this.diceTray.Controls.Add(this.groupBox3);
             this.diceTray.Controls.Add(this.groupBox2);
             this.diceTray.Controls.Add(this.d4Tray);
-            this.diceTray.Location = new System.Drawing.Point(20, 65);
+            this.diceTray.Location = new System.Drawing.Point(5, 52);
             this.diceTray.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.diceTray.Name = "diceTray";
             this.diceTray.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.diceTray.Size = new System.Drawing.Size(1162, 154);
+            this.diceTray.Size = new System.Drawing.Size(1149, 154);
             this.diceTray.TabIndex = 2;
             this.diceTray.TabStop = false;
             this.diceTray.Text = "DiceTray";
@@ -446,7 +448,7 @@
             // 
             // btnRollD6
             // 
-            this.btnRollD6.Location = new System.Drawing.Point(141, 18);
+            this.btnRollD6.Location = new System.Drawing.Point(126, 5);
             this.btnRollD6.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnRollD6.Name = "btnRollD6";
             this.btnRollD6.Size = new System.Drawing.Size(112, 35);
@@ -457,7 +459,7 @@
             // 
             // btnRollD8
             // 
-            this.btnRollD8.Location = new System.Drawing.Point(264, 18);
+            this.btnRollD8.Location = new System.Drawing.Point(249, 5);
             this.btnRollD8.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnRollD8.Name = "btnRollD8";
             this.btnRollD8.Size = new System.Drawing.Size(112, 35);
@@ -468,7 +470,7 @@
             // 
             // btnRollD10
             // 
-            this.btnRollD10.Location = new System.Drawing.Point(387, 18);
+            this.btnRollD10.Location = new System.Drawing.Point(372, 5);
             this.btnRollD10.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnRollD10.Name = "btnRollD10";
             this.btnRollD10.Size = new System.Drawing.Size(112, 35);
@@ -479,7 +481,7 @@
             // 
             // btnRollD12
             // 
-            this.btnRollD12.Location = new System.Drawing.Point(510, 18);
+            this.btnRollD12.Location = new System.Drawing.Point(495, 5);
             this.btnRollD12.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnRollD12.Name = "btnRollD12";
             this.btnRollD12.Size = new System.Drawing.Size(112, 35);
@@ -490,7 +492,7 @@
             // 
             // btnRollD20
             // 
-            this.btnRollD20.Location = new System.Drawing.Point(632, 18);
+            this.btnRollD20.Location = new System.Drawing.Point(617, 5);
             this.btnRollD20.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnRollD20.Name = "btnRollD20";
             this.btnRollD20.Size = new System.Drawing.Size(112, 35);
@@ -501,7 +503,7 @@
             // 
             // btnRollD100
             // 
-            this.btnRollD100.Location = new System.Drawing.Point(753, 18);
+            this.btnRollD100.Location = new System.Drawing.Point(738, 5);
             this.btnRollD100.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnRollD100.Name = "btnRollD100";
             this.btnRollD100.Size = new System.Drawing.Size(112, 35);
@@ -512,7 +514,7 @@
             // 
             // btnRollTray
             // 
-            this.btnRollTray.Location = new System.Drawing.Point(1080, 192);
+            this.btnRollTray.Location = new System.Drawing.Point(1042, 216);
             this.btnRollTray.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnRollTray.Name = "btnRollTray";
             this.btnRollTray.Size = new System.Drawing.Size(112, 35);
@@ -527,28 +529,36 @@
             this.towerSelect.Items.AddRange(new object[] {
             "Default Dice",
             "Warhammer 40k"});
-            this.towerSelect.Location = new System.Drawing.Point(921, 12);
+            this.towerSelect.Location = new System.Drawing.Point(12, 5);
             this.towerSelect.Name = "towerSelect";
             this.towerSelect.Size = new System.Drawing.Size(261, 28);
             this.towerSelect.Sorted = true;
             this.towerSelect.TabIndex = 10;
             this.towerSelect.SelectedIndexChanged += new System.EventHandler(this.towerSelect_SelectedIndexChanged);
             // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.btnRollD4);
+            this.panel1.Controls.Add(this.btnRollD8);
+            this.panel1.Controls.Add(this.diceTray);
+            this.panel1.Controls.Add(this.btnRollD6);
+            this.panel1.Controls.Add(this.btnRollTray);
+            this.panel1.Controls.Add(this.btnRollD10);
+            this.panel1.Controls.Add(this.btnRollD100);
+            this.panel1.Controls.Add(this.btnRollD12);
+            this.panel1.Controls.Add(this.btnRollD20);
+            this.panel1.Location = new System.Drawing.Point(12, 39);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1163, 261);
+            this.panel1.TabIndex = 11;
+            // 
             // DigiDiceTower
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1194, 234);
+            this.ClientSize = new System.Drawing.Size(1185, 312);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.towerSelect);
-            this.Controls.Add(this.btnRollTray);
-            this.Controls.Add(this.btnRollD100);
-            this.Controls.Add(this.btnRollD20);
-            this.Controls.Add(this.btnRollD12);
-            this.Controls.Add(this.btnRollD10);
-            this.Controls.Add(this.btnRollD8);
-            this.Controls.Add(this.btnRollD6);
-            this.Controls.Add(this.diceTray);
-            this.Controls.Add(this.btnRollD4);
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "DigiDiceTower";
             this.Text = "DigiDiceTower";
@@ -568,6 +578,7 @@
             this.groupBox2.PerformLayout();
             this.d4Tray.ResumeLayout(false);
             this.d4Tray.PerformLayout();
+            this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -614,6 +625,7 @@
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.ComboBox towerSelect;
+        private System.Windows.Forms.Panel panel1;
     }
 }
 
