@@ -245,10 +245,12 @@ namespace DigiDiceTower
             if(towerSelect.SelectedIndex == 0)
             {
                 panel1.Visible = true;
+                panel2.Visible = false;
             }
             else
             {
                 panel1.Visible=false;
+                panel2.Visible = true;
             }
         }
     }
