@@ -238,6 +238,13 @@ namespace DigiDiceTower
             d12critfail.Text = $"{d12crits}/{d12fails}";
             d20critfail.Text = $"{d20crits}/{d20fails}";
             d100critfail.Text = $"{d100crits}/{d100fails}";
+            d4Rolls = -1;
+            d6Rolls = -1;
+            d8Rolls = -1;
+            d10Rolls = -1;
+            d12Rolls = -1;
+            d20Rolls = -1;
+            d100Rolls = -1;
         }
 
         private void towerSelect_SelectedIndexChanged(object sender, EventArgs e)
