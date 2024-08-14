@@ -54,6 +54,7 @@
     </Compile>
     <Compile Include="Logic\DiceGenerator.cs" />
     <Compile Include="Models\Die.cs" />
+    <Compile Include="Models\Unit.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
